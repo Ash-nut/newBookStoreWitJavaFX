@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.helloworld1999.mapper.UserMapper">
+    <!-- 关于 resultMap 的设置，在书的25页 -->
+    <!-- 这个映射的名字            映射到Java对象的类型，也是返回值类型 -->
+    <resultMap id="userMap" type="SysUser">
+        <id property="id" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userPassword" column="user_password"/>
+        <result property="userEmail" column="user_email"/>
+        <result property="userInfo" column="user_info"/>
+        <result property="headImg" column="head_img"/>
+        <result property="createTime" column="create_time"
+                jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <select id="selectById" resultMap="userMap">
+        SELECT *
+        FROM sys_user
+        where id = #{id}
+    </select>
+    <select id="selectAll" resultType="SysUser">
+        <!-- 映射规则可以看书的27页最下面的小贴士 -->
+        SELECT id,
+        user_name AS userName,
+        user_password AS userPassword,
+        user_email AS userEmail,
+        user_info AS userInfo,
+        head_img AS headImg,
+        create_time AS createTime
+        FROM sys_user
+    </select>
+    <!-- 在书里的第51页提到了多表查询且返回 多表 的参数的方法，而现在写的这个只是一个多对多而返回单表数据的例子
+     多表的思路大概是这样的，也是改了 类 的属性，把另一个与之表关联的 类 给当成用于返回的类的私有属性，然后这样就可以进行映射了，
+     只要用把那个被当成私有属性的类的参数给映射出来就行了，当然，用的是那个私有属性的类的属性来接映射的
+     放到这个代码里就大概长这个样子：
+     sr.id AS id
+     略...
+     a_b.id AS Ab.id
+     哦，我好像懂了书上前面提过一嘴，那个 resultType 的限制不是来自于 MyBatis 而是 Java
+     不是因为 MyBatis 给的不对，而是 Java 的类接的不对
+     （44页 “返回值类型是由 XML 中的 resultType(或 resultMap 中的 type）决定的，
+     不是由接口中写的返回值类型决定的（本章主要讲XML方式，所以先忽略注解的情况）。”）-->
+    <select id="selectRolesByUserId" resultType="SysRole">
+        SELECT sys_role.id          AS id,
+               sys_role.role_Name   AS roleName,
+               sys_role.enabled     AS enabled,
+               sys_role.create_by   AS createBy,
+               sys_role.create_time AS createTime
+        FROM sys_role
+                 INNER JOIN
+             (SELECT *
+              FROM sys_user
+                       INNER JOIN sys_user_role
+                                  ON sys_user.id = sys_user_role.user_id) AS s_sur
+             ON s_sur.role_id = sys_role.id
+    </select>
+    <insert id="insert">
+        INSERT INTO sys_user(id, user_name, user_password, user_email, user_info, head_img, create_time)
+        VALUES (#{id}, #{userName}, #{userPassword}, #{userEmail}, #{userInfo}, #{headImg,jdbcType=BLOB},
+                #{createTime,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insert2" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO sys_user(
+        user_name,user_password,
+        <if test="userEmail != null and userEmail != ''">
+            user_email,
+        </if>
+        user_info,head_img,create_time)
+        values(
+        #{userName},#{userPassword},
+        <if test="userEmail != null and userEmail != ''">
+            #{userEmail},
+        </if>
+        #{userInfo},#{headImg,jdbcType=BLOB},
+        #{createTime,jdbcType=TIMESTAMP})
+    </insert>
+    <insert id="insert3">
+        INSERT INTO sys_user(user_name, user_password, user_email, user_info, head_img, create_time)
+        VALUES (#{userName}, #{userPassword}, #{userEmail}, #{userInfo}, #{headImg,jdbcType=BLOB},
+        #{createTime,jdbcType=TIMESTAMP})
+        <selectKey keyColumn="id" resultType="long" keyProperty="id" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+    <insert id="insertList">
+        INSERT INTO sys_user(
+        user_name,user_password,user_email,user_info,head_img,create_time)
+        values
+        <foreach collection="list" item="user" separator=",">
+            (
+            #{user.userName}, #{user.userPassword}, #{user.userEmail}, #{user.userInfo},
+            #{user.headImg,jdbcType=BLOB}, #{user.createTime,jdbcType=TIMESTAMP})
+        </foreach>
+    </insert>
+    <update id="updateById">
+        UPDATE sys_user
+        SET user_name     = #{userName},
+            user_password = #{userPassword},
+            user_email    = #{userEmail},
+            user_info     = #{userInfo},
+            head_img      = #{headImg,jdbcType=BLOB},
+            create_time   = #{createTime,jdbcType=TIMESTAMP}
+        where id = #{id}
+    </update>
+    <update id="updateByIdSelective">
+        UPDATE sys_user
+        <set>
+            <if test="userName != null and userName != ''">
+                user_name = #{userName},
+            </if>
+            <if test="userPassword != null and userPassword != ''">
+                user_password = #{userPassword},
+            </if>
+            <if test="userEmail != null and userEmail != ''">
+                user_email = #{userEmail},
+            </if>
+            <if test="userInfo != null and userInfo != ''">
+                user_info = #{userEmail},
+            </if>
+            <if test="headImg != null">
+                head_img = #{headImg},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            id = #{id}
+        </set>
+        WHERE id = #{id}
+    </update>
+    <delete id="deleteById">
+        DELETE
+        FROM sys_user
+        WHERE id = #{id}
+    </delete>
+    <select id="selectRolesByUserIdAndRoleEnabled" resultType="cn.helloworld1999.bean.SysRole">
+        SELECT r.id,
+               r.role_name   roleName,
+               r.enabled,
+               r.create_by   createBy,
+               r.create_time createTime
+        FROM sys_user u
+                 INNER JOIN sys_user_role ur ON u.id = ur.user_id
+                 INNER JOIN sys_role r ON ur.role_id = r.id
+        WHERE u.id = #{userId}
+          AND r.enabled = #{enabled}
+    </select>
+    <select id="selectRolesByUserAndRole" resultType="cn.helloworld1999.bean.SysRole">
+        SELECT sr.id,
+               sr.role_name   AS roleName,
+               sr.enabled,
+               sr.create_by   AS createBy,
+               sr.create_time AS createTime
+        FROM sys_user AS su
+                 INNER JOIN sys_user_role AS sru ON su.id = sru.user_id
+                 INNER JOIN sys_role AS sr ON sru.role_id = sr.id
+        WHERE su.id = #{user.id}
+          AND sr.enabled = #{role.enabled}
+    </select>
+    <!-- 陷阱 OGNL 得小写 逻辑运算符 or and null 和其它的 -->
+    <select id="selectByUser" resultType="cn.helloworld1999.bean.SysUser">
+        SELECT
+        user_name AS userName,
+        user_password AS userPassword,
+        user_email AS userEmail,
+        user_info AS userInfo,
+        head_img AS headImg,
+        create_time AS createTime
+        FROM sys_user
+        <where>
+            <if test="userName != null and userName != ''">
+                AND user_name LIKE CONCAT('%', #{userName}, '%')
+            </if>
+            <if test="userEmail != null and userEmail != ''">
+                AND user_email = #{userEmail}
+            </if>
+        </where>
+    </select>
+    <select id="selectByIdOrUserName" resultType="cn.helloworld1999.bean.SysUser">
+        SELECT id,
+        user_name AS userName,
+        user_password AS userPassword,
+        user_email AS userEmail,
+        user_info AS userInfo,
+        head_img AS headImg,
+        create_time AS createTime
+        FROM sys_user
+        WHERE 1 = 1
+        <choose>
+            <when test="id != null">
+                AND id = #{id}
+            </when>
+            <otherwise>
+                AND 1 = 2
+            </otherwise>
+        </choose>
+    </select>
+    <select id="selectByIdList" resultType="cn.helloworld1999.bean.SysUser">
+        SELECT id,
+        user_name AS userName,
+        user_password AS userPassword,
+        user_email AS userInfo,
+        head_img AS headImg,
+        create_time AS createTIme
+        FROM sys_user
+        WHERE id IN
+        <foreach collection="list" open="(" close=")" separator="," item="id" index="i">
+            #{id}
+        </foreach>
+    </select>
+</mapper>

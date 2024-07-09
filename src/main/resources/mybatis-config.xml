@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+
+        <!-- 设置日志 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+        <!-- 设置自动数据库 下划线命名 转 Java 驼峰命名,书28页 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <!-- 从配置文件中导入属性 -->
+    <typeAliases>
+        <!-- 这个地方管的是 Mapper.xml 里的全限定名称，它可和下面添加 mapper.xml 文件不是一会儿事！！！ -->
+        <package name="cn.helloworld1999.bean"/>
+    </typeAliases>
+
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <!-- 设置连接mysql参数 -->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis"/>
+                <property name="username" value="safe_user"/>
+                <property name="password" value="safe_user"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <!-- 加载 mapper 映射文件，可得注意了，得写全了，它和上面的不是同一件事情！,算了，搞不定这里的自动扫描，还是一条一条的添加吧 -->
+        <mapper resource="cn/helloworld1999/mapper/UserMapper.xml"/>
+    </mappers>
+
+</configuration>
