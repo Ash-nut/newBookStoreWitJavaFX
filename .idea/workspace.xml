@@ -5,8 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/view/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/OrderSubpage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SomeoneOrders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SomeoneShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/LoginImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysPrivilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysRolePrivilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysUserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/easyTest/testUserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/Privilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RolePrivilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserRole.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/PrivilegeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RolePrivilegeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserRpleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/UserMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +45,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -23,6 +53,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -50,11 +84,12 @@
     "JUnit.UserMapperTest.testInsertList.executor": "Run",
     "JUnit.UserMapperTest.testSelectAll.executor": "Run",
     "JUnit.UserMapperTest.testSelectById.executor": "Run",
+    "Maven.bean [install].executor": "Run",
     "Maven.bean [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/DevelopData/newBookStoreWitJavaFX",
+    "last_opened_file_path": "D:/DevelopData/newBookStoreWitJavaFX/src/main/resources/cn/helloworld1999/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,14 +105,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources\cn\helloworld1999\mapper" />
+      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\java\cn\helloworld1999\bean" />
       <recent name="D:\DevelopData\newBookStoreWitJavaFX" />
       <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\java\cn\helloworld1999" />
       <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources" />
-      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\test\java" />
-      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources\cn\helloworld1999" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.helloworld1999.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.GUI">
+  <component name="RunManager" selected="JUnit.UserMapperTest.testSelectById">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.view.GUI" />
       <module name="newBookStoreWitJavaFX" />
@@ -156,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest.testSelectById" />
         <item itemvalue="应用程序.GUI" />
         <item itemvalue="JUnit.UserMapperTest.testSelectAll" />
         <item itemvalue="JUnit.UserMapperTest" />
         <item itemvalue="JUnit.UserMapperTest.testInsertList" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectById" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +219,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720502391225</updated>
       <workItem from="1720502392293" duration="2311000" />
+      <workItem from="1720505279199" duration="6168000" />
     </task>
     <servers />
   </component>

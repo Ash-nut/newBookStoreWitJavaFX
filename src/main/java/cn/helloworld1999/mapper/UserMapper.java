@@ -1,37 +1,30 @@
 package cn.helloworld1999.mapper;
 
-import cn.helloworld1999.bean.SysRole;
-import cn.helloworld1999.bean.SysUser;
-import org.apache.ibatis.annotations.Param;
+import cn.helloworld1999.bean.User;
+import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
 
 public interface UserMapper {
-    SysUser selectById(Long id);
+    List<User> showAllUsers(SqlSession sqlSession);
 
-    List<SysUser> selectAll();
+    /**
+     * 向数据库中插入一个自动分配id的 User
+     * @param user 这个 User 要使用 无 id 的 User 构造方法
+     */
+    void insertUser(User user);
 
-    List<SysRole> selectRolesByUserId(Long userId);
+    /**
+     * 通过 账号 查找 User
+     * @param user User对象
+     * @return User对象 或 NULL
+     */
+    User selectUserByAccount(User user);
 
-    int insert(SysUser sysUser);
-
-    int insert2(SysUser sysUser);
-
-    int insert3(SysUser sysUser);
-
-    int updateById(SysUser sysUser);
-
-    int deleteById(Long id);
-
-    List<SysRole> selectRolesByUserIdAndRoleEnabled(@Param("userId") Long userId, @Param("enabled") Integer enabled);
-
-    //67页，现在可以通过带入两个实例来进行查询了
-    List<SysRole> selectRolesByUserAndRole(
-            @Param("user") SysUser user,
-            @Param("role") SysRole role);
-    List<SysUser> selectByUser(SysUser user);
-    int updateByIdSelective(SysUser sysUser);
-    SysUser selectByIdOrUserName(SysUser sysUser);
-    List<SysUser> selectByIdList(List<Long> idList);
-    int insertList(List<SysUser>userList);
+    /**
+     * 更新 User 并保存到数据库 ，可以用来做任何修改 User 数据的事情
+     * @param user 待修改的 User 对象
+     * @return 返回一个修改后的 User 对象
+     */
+    User updateUser(User user);
 }
