@@ -22,9 +22,10 @@ public interface UserMapper {
     User selectUserByAccount(User user);
 
     /**
-     * 更新 User 并保存到数据库 ，可以用来做任何修改 User 数据的事情
+     * 动态更新 User 并保存到数据库
+     * 可以更新的内容有：password、balance、phoneNum
      * @param user 待修改的 User 对象
      * @return 返回一个修改后的 User 对象
      */
-    User updateUser(User user);
+    int updateUserSelective(User user);
 }

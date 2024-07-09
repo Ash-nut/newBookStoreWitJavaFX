@@ -34,6 +34,7 @@
     <mappers>
         <!-- 加载 mapper 映射文件，可得注意了，得写全了，它和上面的不是同一件事情！,算了，搞不定这里的自动扫描，还是一条一条的添加吧 -->
         <mapper resource="cn/helloworld1999/mapper/UserMapper.xml"/>
+        <mapper resource="cn/helloworld1999/mapper/RoleMapper.xml"/>
     </mappers>
 
 </configuration>

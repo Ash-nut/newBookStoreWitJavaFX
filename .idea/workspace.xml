@@ -5,36 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/OrderSubpage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SomeoneOrders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SomeoneShoppingCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/LoginImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysPrivilege.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysRolePrivilege.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SysUserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/easyTest/testUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/Privilege.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RolePrivilege.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/PrivilegeMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RolePrivilegeMapper.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserRpleMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/UserMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +58,7 @@
     "JUnit.UserMapperTest.testInsertList.executor": "Run",
     "JUnit.UserMapperTest.testSelectAll.executor": "Run",
     "JUnit.UserMapperTest.testSelectById.executor": "Run",
+    "JUnit.UserMapperTest.testUpdateUserSelective.executor": "Run",
     "Maven.bean [install].executor": "Run",
     "Maven.bean [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -115,7 +90,7 @@
       <recent name="cn.helloworld1999.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.testSelectById">
+  <component name="RunManager" selected="JUnit.UserMapperTest.testUpdateUserSelective">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.view.GUI" />
       <module name="newBookStoreWitJavaFX" />
@@ -140,22 +115,6 @@
       <option name="PACKAGE_NAME" value="cn.helloworld1999.mapper" />
       <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.UserMapperTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.testInsertList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="newBookStoreWitJavaFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.helloworld1999.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.helloworld1999.mapper" />
-      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testInsertList" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,13 +151,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserMapperTest.testUpdateUserSelective" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="newBookStoreWitJavaFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.helloworld1999.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.helloworld1999.mapper" />
+      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.UserMapperTest" />
+      <option name="METHOD_NAME" value="testUpdateUserSelective" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserMapperTest.testUpdateUserSelective" />
         <item itemvalue="JUnit.UserMapperTest.testSelectById" />
         <item itemvalue="应用程序.GUI" />
         <item itemvalue="JUnit.UserMapperTest.testSelectAll" />
         <item itemvalue="JUnit.UserMapperTest" />
-        <item itemvalue="JUnit.UserMapperTest.testInsertList" />
       </list>
     </recent_temporary>
   </component>
@@ -219,7 +194,7 @@
       <option name="presentableId" value="Default" />
       <updated>1720502391225</updated>
       <workItem from="1720502392293" duration="2311000" />
-      <workItem from="1720505279199" duration="6168000" />
+      <workItem from="1720505279199" duration="11616000" />
     </task>
     <servers />
   </component>

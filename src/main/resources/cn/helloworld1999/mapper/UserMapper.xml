@@ -6,20 +6,23 @@
     <insert id="insertUser">
 
         INSERT INTO user (user_id, account, password, balance, role, user_phone_num)
-        VALUES (#{userId},#{account},#{password},#{balance},#{role},#{userPhoneNum})
+        VALUES (#{userId}, #{account}, #{password}, #{balance}, #{role}, #{userPhoneNum})
     </insert>
-    <update id="updateUser">
+
+    <update id="updateUserSelective">
         UPDATE user
-        SET
-            <if test="password != null and ppassword !=''">
+        <set>
+            <if test="password != null and password !=''">
                 password = #{password},
             </if>
             <if test="balance != null">
-                balance = #{balance}
+                balance = #{balance},
             </if>
-        <if test="role != null">
-
-        </if>
+            <if test="userPhoneNum != null and userPhoneNum !=''">
+                user_phone_num = #{userPhoneNum}
+            </if>
+        </set>
+        WHERE user_id = #{userId}
     </update>
 
     <select id="showAllUsers" resultType="cn.helloworld1999.bean.User">
