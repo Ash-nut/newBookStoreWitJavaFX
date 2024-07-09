@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/RoleMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/view/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/view/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +31,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ash-nut&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ash-nut/newBookStoreWitJavaFX.git&quot;,
+    &quot;accountId&quot;: &quot;f1d07fc0-8b38-4484-8abc-7cde4e9761d6&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -54,17 +70,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "JUnit.RoleMapperTest.selectRoleSelective.executor": "Run",
+    "JUnit.RoleMapperTest.testSelectAllUserRole.executor": "Run",
     "JUnit.UserMapperTest.executor": "Run",
     "JUnit.UserMapperTest.testInsertList.executor": "Run",
     "JUnit.UserMapperTest.testSelectAll.executor": "Run",
+    "JUnit.UserMapperTest.testSelectByAccountAndInsertUser.executor": "Run",
     "JUnit.UserMapperTest.testSelectById.executor": "Run",
     "JUnit.UserMapperTest.testUpdateUserSelective.executor": "Run",
+    "Maven.bean [clean].executor": "Run",
     "Maven.bean [install].executor": "Run",
     "Maven.bean [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/DevelopData/newBookStoreWitJavaFX/src/main/resources/cn/helloworld1999/mapper",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/DevelopData/newBookStoreWitJavaFX/src/main/resources/cn/helloworld1999",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -75,28 +96,35 @@
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true",
-    "应用程序.GUI.executor": "Run"
+    "应用程序.GUI.executor": "Run",
+    "应用程序.cn.helloworld1999.controller.GUI.executor": "Run"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources\cn\helloworld1999" />
+      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources" />
+      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\java\cn\helloworld1999" />
       <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources\cn\helloworld1999\mapper" />
       <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\java\cn\helloworld1999\bean" />
-      <recent name="D:\DevelopData\newBookStoreWitJavaFX" />
-      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\java\cn\helloworld1999" />
-      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources\cn\helloworld1999" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.helloworld1999.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.helloworld1999.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.testUpdateUserSelective">
+  <component name="RunManager" selected="JUnit.RoleMapperTest.testSelectAllUserRole">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.view.GUI" />
+      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.controller.GUI" />
       <module name="newBookStoreWitJavaFX" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.helloworld1999.view.*" />
+          <option name="PATTERN" value="cn.helloworld1999.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoleMapperTest.selectRoleSelective" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="newBookStoreWitJavaFX" />
       <extension name="coverage">
         <pattern>
@@ -113,29 +141,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.helloworld1999.mapper" />
-      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.UserMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserMapperTest.testSelectAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="newBookStoreWitJavaFX" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.helloworld1999.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.helloworld1999.mapper" />
-      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testSelectAll" />
+      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.RoleMapperTest" />
+      <option name="METHOD_NAME" value="selectRoleSelective" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.testSelectById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoleMapperTest.testSelectAllUserRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="newBookStoreWitJavaFX" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.helloworld1999.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.helloworld1999.mapper" />
+      <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.RoleMapperTest" />
+      <option name="METHOD_NAME" value="testSelectAllUserRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserMapperTest.testSelectByAccountAndInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="newBookStoreWitJavaFX" />
       <extension name="coverage">
         <pattern>
@@ -145,7 +174,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="cn.helloworld1999.mapper" />
       <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.mapper.UserMapperTest" />
-      <option name="METHOD_NAME" value="testSelectById" />
+      <option name="METHOD_NAME" value="testSelectByAccountAndInsertUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoleMapperTest.testSelectAllUserRole" />
         <item itemvalue="JUnit.UserMapperTest.testUpdateUserSelective" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectById" />
-        <item itemvalue="应用程序.GUI" />
-        <item itemvalue="JUnit.UserMapperTest.testSelectAll" />
-        <item itemvalue="JUnit.UserMapperTest" />
+        <item itemvalue="JUnit.UserMapperTest.testSelectByAccountAndInsertUser" />
+        <item itemvalue="JUnit.RoleMapperTest.selectRoleSelective" />
+        <item itemvalue="应用程序.cn.helloworld1999.controller.GUI" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +223,9 @@
       <option name="presentableId" value="Default" />
       <updated>1720502391225</updated>
       <workItem from="1720502392293" duration="2311000" />
-      <workItem from="1720505279199" duration="11616000" />
+      <workItem from="1720505279199" duration="14224000" />
+      <workItem from="1720520833880" duration="6800000" />
+      <workItem from="1720534500788" duration="3378000" />
     </task>
     <servers />
   </component>

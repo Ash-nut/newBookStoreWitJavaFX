@@ -3,20 +3,21 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.helloworld1999.mapper.RoleMapper">
+    <delete id="deleteRole">
+        DELETE FROM role WHERE id = #{id}
+    </delete>
     <select id="selectAllUserRole" resultType="cn.helloworld1999.bean.Role">
         SELECT * FROM role
     </select>
-    <select id="selectRoleSelective" resultType="cn.helloworld1999.bean.Role">
+    <select id="selectSomeRole" resultType="cn.helloworld1999.bean.Role">
         SELECT * FROM role
         <where>
-            <trim prefixOverrides="AND">
-                <if test="userId != null and userId !=''">
+                <if test="userId != null">
                     AND user_id = #{userId}
                 </if>
                 <if test="roleName != null and roleName !=''">
                     AND role_name = #{roleName}
                 </if>
-            </trim>
         </where>
     </select>
 </mapper>

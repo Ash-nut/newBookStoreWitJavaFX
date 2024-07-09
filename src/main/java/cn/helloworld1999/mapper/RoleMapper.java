@@ -13,10 +13,17 @@ public interface RoleMapper {
     List<Role> selectAllUserRole();
 
     /**
-     * 模糊搜索 Role
-     * 应用场景：1.登录后查询 User 的 Role；2.筛选出所有的 Role UserId
-     * @param role 一个以任意属性构造的非空 Role
-     * @return 数值符合 Role 中非空属性的 List<Role>
+     * 搜索某人所拥有的全部角色 或 某个人的某个角色
+     * 应用场景：1.登录后查询 User 的 Role 2.可以拿到某人的某个角色的对象，以便于后续操作
+     * @param role 可以单 userId 构造，或 全参构造 效果即1、2
+     * @return List<Role>
      */
-    List<Role> selectRoleSelective(Role role);
+    List<Role> selectSomeRole(Role role);
+
+    /**
+     * 根据传入的 对象-角色 列表，删除对象的角色
+     * @param roles 这个列表百分百是从 RoleMapper 的 select 方法得到的
+     * @return 影响行数
+     */
+    int deleteRole(List<Role> roles);
 }
