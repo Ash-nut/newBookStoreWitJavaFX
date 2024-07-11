@@ -1,10 +1,8 @@
-/*
+
 package cn.helloworld1999.service;
 
 import com.aliyun.auth.credentials.Credential;
 import com.aliyun.auth.credentials.provider.StaticCredentialProvider;
-import com.aliyun.dysmsapi20170525.models.*;
-import com.aliyun.dysmsapi20170525.Client;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import darabonba.core.client.ClientOverrideConfiguration;
 
@@ -16,7 +14,7 @@ public class SendSms {
     public static void sendSms(String phoneNumber, String signName, String templateCode, String templateParam) throws Exception {
         // 配置凭证认证信息，包括ak、secret
         StaticCredentialProvider provider = StaticCredentialProvider.create(Credential.builder()
-                .accessKeyId(System.getenv("ALIBABA_CLOUD_ACCESS_KEY_ID"))
+                .accessKeyId(System.getenv("LTAI5tNuhPTvCNVcKFR94Ebn"))
                 .accessKeySecret(System.getenv("ALIBABA_CLOUD_ACCESS_KEY_SECRET"))
                 .build());
 
@@ -43,4 +41,4 @@ public class SendSms {
         client.close();
     }
 }
-*/
+

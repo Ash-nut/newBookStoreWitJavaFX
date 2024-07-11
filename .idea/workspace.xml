@@ -5,56 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="加载JavaFX前，进行保存">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/BookTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ProductListApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/RetrievePassword.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ThreeRoleLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/TwoRoleLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/OrderSubpageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/SendSms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/UserBuyBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/密钥" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/testMybatis/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/GetMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/SceneSwitcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/view/start.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/bookTable.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/login.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/retrievePassword.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/siginNewUser.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/BookMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderSubpageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/controller/BookTableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/BookMapper.Test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/mapper/OrderMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/service/impl/UserBuyBooksImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/00349923-3528-4593-a4ff-343987a6f528.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/OrderSubpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/OrderSubpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SomeoneOrders.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/SomeoneShoppingCart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/LoginImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/LoginImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/view/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/SendSms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/SendSms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/service/impl/UserBuyBooksImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/service/impl/UserBuyBooksImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +103,7 @@
     "应用程序.ProductListApp.executor": "Run",
     "应用程序.SendSms.executor": "Run",
     "应用程序.UserBuyBooksImpl.executor": "Run",
-    "应用程序.cn.helloworld1999.controller.GUI.executor": "Debug",
+    "应用程序.cn.helloworld1999.controller.GUI.executor": "Run",
     "应用程序.cn.helloworld1999.view.GUI.executor": "Run",
     "应用程序.test.executor": "Run"
   }
@@ -292,7 +248,7 @@
       <workItem from="1720534500788" duration="11048000" />
       <workItem from="1720574799089" duration="47843000" />
       <workItem from="1720629978989" duration="1255000" />
-      <workItem from="1720660700395" duration="7016000" />
+      <workItem from="1720660700395" duration="9273000" />
     </task>
     <task id="LOCAL-00001" summary="加载JavaFX前，进行保存">
       <option name="closed" value="true" />
@@ -315,11 +271,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/BookTable.java</url>
           <line>88</line>

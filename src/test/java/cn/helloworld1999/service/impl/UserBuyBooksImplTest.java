@@ -92,7 +92,7 @@ public class UserBuyBooksImplTest {
         }
         order.setOrderSumPrice(orderPriceSum); // 设置订单总价
         order.setState(Order.STATE[0]); //设置订单状态为"待付款"
-        order.setOrderTime(new Date()); //生成订单时间
+        order.setOrderDate((new Date()); //生成订单时间
         GetMapper.getOrderMapper().updateOrder(order); //把待付款订单写入
         GetMapper.commit();
     }

@@ -6,7 +6,7 @@ public class Order {
 
     private Integer orderId;    //订单号
     private Integer userId;     //用户id
-    private Date orderTime;     //创建时间
+    private Date orderDate;     //创建时间
     private Double orderSumPrice;   //总价
     private String remark;  //备注
     private String state;   //状态
@@ -28,12 +28,12 @@ public class Order {
         this.userId = userId;
     }
 
-    public Date getOrderTime() {
-        return orderTime;
+    public Date getorderDate() {
+        return orderDate;
     }
 
-    public void setOrderTime(Date orderTime) {
-        this.orderTime = orderTime;
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
     }
 
     public Double getOrderSumPrice() {
