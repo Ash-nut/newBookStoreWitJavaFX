@@ -1,4 +1,4 @@
-package cn.helloworld1999.view;
+package cn.helloworld1999.controller;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -20,6 +20,7 @@ public class GUI extends Application {
     public void start(Stage primaryStage) throws Exception {
         Pane root = FXMLLoader.load(getClass().getResource("login.fxml"));
         Scene scene = new Scene(root,1280,720);
+        primaryStage.setTitle("测试 BooK Store");
         primaryStage.setScene(scene);
         primaryStage.show();
     }

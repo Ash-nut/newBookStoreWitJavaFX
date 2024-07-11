@@ -14,8 +14,8 @@ public interface RoleMapper {
 
     /**
      * 搜索某人所拥有的全部角色 或 某个人的某个角色
-     * 应用场景：1.登录后查询 User 的 Role 2.可以拿到某人的某个角色的对象，以便于后续操作
-     * @param role 可以单 userId 构造，或 全参构造 效果即1、2
+     * 应用场景：1.登录后查询 User 的 Role 2.可以拿到某人的某个角色的对象，以便于后续操作 3.得到某个角色有哪些人
+     * @param role 可以任意参数组合 (user,null) 效果1； (user,roleId) 效果2； (null,roleId) 效果3
      * @return List<Role>
      */
     List<Role> selectSomeRole(Role role);

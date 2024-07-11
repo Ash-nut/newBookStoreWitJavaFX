@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import java.util.List;
 
 public interface UserMapper {
-    List<User> showAllUsers(SqlSession sqlSession);
+    List<User> showAllUsers();
 
     /**
      * 向数据库中插入一个自动分配id的 User
@@ -28,4 +28,12 @@ public interface UserMapper {
      * @return 返回一个修改后的 User 对象
      */
     int updateUserSelective(User user);
+
+    /**
+     * 模糊查询
+     * @param user 可用 userId、account、balance、user_phone_num
+     * @return 返回符合条件的 User 列表
+     */
+    List<User> selectUserSelective(User user);
+    User selectUserByUserId(User user);
 }

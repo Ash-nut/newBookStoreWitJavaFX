@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="cn.helloworld1999.controller.BookTable">
+    <TableView fx:id="bookTable" prefWidth="1280" prefHeight="720" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="50.0">
+        <columns>
+            <TableColumn fx:id="book_id" text="Book ID" />
+            <TableColumn fx:id="book_name" text="Book Name" />
+            <TableColumn fx:id="price" text="Price" />
+            <TableColumn fx:id="stock" text="Stock" />
+            <TableColumn text="" />
+        </columns>
+    </TableView>
+</AnchorPane>

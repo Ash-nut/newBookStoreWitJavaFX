@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<AnchorPane fx:id="SiginPane" fx:controller="cn.helloworld1999.controller.SiginNewUser" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="inputNewAccount" layoutX="506.0" layoutY="123.0" onAction="#getNewAccount" promptText="请输入新用户名">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="inputPassword" layoutX="506.0" layoutY="182.0" onAction="#getNewPassword" promptText="请输入密码">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="inputPasswordAgain" layoutX="506.0" layoutY="242.0" onAction="#confirmPassword" promptText="请再次确认密码">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="inputPhoneNum" layoutX="506.0" layoutY="309.0" onAction="#getPhoneNum" text="请输入手机号">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputVerificationCode" layoutX="506.0" layoutY="375.0" onAction="#getVerificationCode" text="请输入验证码">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ackButton" layoutX="664.0" layoutY="445.0" mnemonicParsing="false" onAction="#ackSigin" prefHeight="41.0" prefWidth="111.0" text="确认注册">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="506.0" layoutY="445.0" mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="130.0" text="取消并返回">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

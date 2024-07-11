@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.helloworld1999.mapper.OrderMapper">
+    <insert id="createOrder">
+        INSERT INTO book_store.order(order_id, user_id, order_date, order_sum_price, remark, state)
+        VALUES (#{orderId}, #{userId}, #{orderTime,jdbcType=TIMESTAMP}, #{orderSumPrice}, #{remark}, #{state})
+    </insert>
+    <insert id="creatAndReturnOrderId" useGeneratedKeys="true" keyProperty="orderId">
+        INSERT INTO book_store.order(user_id, order_date, order_sum_price, remark, state)
+        VALUES (#{userId}, #{orderTime,jdbcType=TIMESTAMP}, #{orderSumPrice}, #{remark}, #{state})
+    </insert>
+    <update id="updateOrder">
+        UPDATE book_store.order
+        SET state = #{state},order_date = #{orderTime,jdbcType=TIMESTAMP},order_sum_price = #{orderSumPrice}
+        WHERE order_id = #{orderId}
+    </update>
+    <delete id="deleteOrder">
+        DELETE
+        FROM book_store.order
+        WHERE order_id = #{orderId}
+    </delete>
+    <select id="getSomeOrders" resultType="cn.helloworld1999.bean.Order">
+        SELECT * FROM book_store.`order` WHERE user_id = #{userId}
+    </select>
+    <select id="getMaxOrderId" resultType="java.lang.Integer">
+        SELECT MAX(order_id) FROM book_store.order;
+    </select>
+</mapper>

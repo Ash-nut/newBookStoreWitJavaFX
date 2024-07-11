@@ -4,13 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.helloworld1999.mapper.RoleMapper">
     <delete id="deleteRole">
-        DELETE FROM role WHERE id = #{id}
+        DELETE FROM book_store.role WHERE id = #{id}
     </delete>
     <select id="selectAllUserRole" resultType="cn.helloworld1999.bean.Role">
-        SELECT * FROM role
+        SELECT * FROM book_store.role
     </select>
     <select id="selectSomeRole" resultType="cn.helloworld1999.bean.Role">
-        SELECT * FROM role
+        SELECT * FROM book_store.role
         <where>
                 <if test="userId != null">
                     AND user_id = #{userId}

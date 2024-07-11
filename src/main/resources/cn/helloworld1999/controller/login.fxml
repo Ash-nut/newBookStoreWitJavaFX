@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+
+<AnchorPane fx:id="rootPane" fx:controller="cn.helloworld1999.controller.Login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="loginButton" layoutX="1027.0" layoutY="410.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="23.0" prefWidth="55.0" text="登录" />
+      <Button fx:id="signInButton" layoutX="1105.0" layoutY="410.0" mnemonicParsing="false" onAction="#signIn" prefHeight="23.0" prefWidth="55.0" text="注册" />
+      <Button fx:id="lost" layoutX="1027.0" layoutY="443.0" mnemonicParsing="false" onAction="#lost" text="忘记密码" />
+      <Button fx:id="exitButton" layoutX="1105.0" layoutY="443.0" mnemonicParsing="false" onAction="#exit" prefHeight="23.0" prefWidth="55.0" text="退出" />
+      <PasswordField id="userPassowrd" fx:id="inputPassword" layoutX="999.0" layoutY="375.0" onAction="#inputPassword" promptText="密码" />
+      <TextField id="userAccount" fx:id="inputAccount" layoutX="999.0" layoutY="340.0" onAction="#inputAccount" promptText="账号" />
+   </children>
+</AnchorPane>
+

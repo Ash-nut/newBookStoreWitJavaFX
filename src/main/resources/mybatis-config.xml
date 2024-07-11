@@ -9,6 +9,7 @@
         <!-- 设置日志 -->
         <setting name="logImpl" value="STDOUT_LOGGING"/>
         <!-- 设置自动数据库 下划线命名 转 Java 驼峰命名,书28页 -->
+        <!-- 这个东西到底是什么鬼 为什么会影响结果-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
 
@@ -35,6 +36,9 @@
         <!-- 加载 mapper 映射文件，可得注意了，得写全了，它和上面的不是同一件事情！,算了，搞不定这里的自动扫描，还是一条一条的添加吧 -->
         <mapper resource="cn/helloworld1999/mapper/UserMapper.xml"/>
         <mapper resource="cn/helloworld1999/mapper/RoleMapper.xml"/>
+        <mapper resource="cn/helloworld1999/mapper/BookMapper.xml"/>
+        <mapper resource="cn/helloworld1999/mapper/OrderMapper.xml"/>
+        <mapper resource="cn/helloworld1999/mapper/OrderSubpageMapper.xml"/>
     </mappers>
 
 </configuration>

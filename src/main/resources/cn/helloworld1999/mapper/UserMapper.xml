@@ -5,12 +5,12 @@
 <mapper namespace="cn.helloworld1999.mapper.UserMapper">
     <insert id="insertUser">
 
-        INSERT INTO user (user_id, account, password, balance, role, user_phone_num)
+        INSERT INTO book_store.user (user_id, account, password, balance, role, user_phone_num)
         VALUES (#{userId}, #{account}, #{password}, #{balance}, #{role}, #{userPhoneNum})
     </insert>
 
     <update id="updateUserSelective">
-        UPDATE user
+        UPDATE book_store.user
         <set>
             <if test="password != null and password !=''">
                 password = #{password},
@@ -26,11 +26,31 @@
     </update>
 
     <select id="showAllUsers" resultType="cn.helloworld1999.bean.User">
-        SELECT * FROM user
+        SELECT * FROM book_store.user
     </select>
     <select id="selectUserByAccount" resultType="cn.helloworld1999.bean.User">
         SELECT *
-        FROM user
+        FROM book_store.user
         WHERE account = #{account}
+    </select>
+    <select id="selectUserSelective">
+        SELECT * FROM book_store.user
+        <where>
+            <if test="user_id != null">
+                AND user_id = #{userId}
+            </if>
+            <if test="account != null and account != ''">
+                AND account = #{account}
+            </if>
+            <if test="balance != null">
+                AND balance = #{balance}
+            </if>
+            <if test="user_phone_num != null and user_phone_num != ''">
+                AND user_phone_num = #{user_phone_num}
+            </if>
+        </where>
+    </select>
+    <select id="selectUserByUserId" resultType="cn.helloworld1999.bean.User">
+        SELECT * FROM book_store.user WHERE user_id = #{userId}
     </select>
 </mapper>

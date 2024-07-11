@@ -37,4 +37,23 @@ public class Book {
     public void setStock(Integer stock) {
         this.stock = stock;
     }
+
+    /**
+     * 标准构造
+     * @param bookName 名称
+     * @param price 价格
+     * @param stock 库存
+     */
+    public Book( Integer bookId,String bookName, Double price,Integer stock) {
+        this.bookId = bookId;
+        this.stock = stock;
+        this.price = price;
+        this.bookName = bookName;
+    }
+
+    /**
+     * 用于调试的空参构造
+     */
+    public Book() {
+    }
 }

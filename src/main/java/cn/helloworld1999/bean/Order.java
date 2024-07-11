@@ -1,14 +1,16 @@
 package cn.helloworld1999.bean;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Order {
-    private Integer orderId;
-    private Integer userId;
-    private Date orderTime;
-    private Double orderSumPrice;
-    private String remark;
-    private String state;
+
+    private Integer orderId;    //订单号
+    private Integer userId;     //用户id
+    private Date orderTime;     //创建时间
+    private Double orderSumPrice;   //总价
+    private String remark;  //备注
+    private String state;   //状态
+    public static final String[] STATE = {"待付款","取消","已完成"};
 
     public Integer getOrderId() {
         return orderId;

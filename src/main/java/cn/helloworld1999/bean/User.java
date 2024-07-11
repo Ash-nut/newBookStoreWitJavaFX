@@ -79,4 +79,23 @@ public class User {
         this.role = role;
         this.userPhoneNum = userPhoneNum;
     }
+
+    /**
+     * 用于登录的构造方法
+     * @param account 账号
+     * @param password 密码
+     */
+    public User(String account, String password) {
+        this.account = account;
+        this.password = password;
+    }
+
+    public User(Integer userId, String account, String password, Double balance, Integer role, String userPhoneNum) {
+        this.userId = userId;
+        this.account = account;
+        this.password = password;
+        this.balance = balance;
+        this.role = role;
+        this.userPhoneNum = userPhoneNum;
+    }
 }
