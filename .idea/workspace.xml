@@ -6,16 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="加载JavaFX前，进行保存">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderManagePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderManagePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/RetrievePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/RetrievePassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ThreeRoleLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ThreeRoleLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/mePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/mePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/retrievePassword.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/retrievePassword.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/userFindBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/userFindBook.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -257,7 +248,8 @@
       <workItem from="1720752508795" duration="6753000" />
       <workItem from="1720764971092" duration="13754000" />
       <workItem from="1720783217795" duration="2565000" />
-      <workItem from="1720786022849" duration="7266000" />
+      <workItem from="1720786022849" duration="7302000" />
+      <workItem from="1720793462751" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="加载JavaFX前，进行保存">
       <option name="closed" value="true" />

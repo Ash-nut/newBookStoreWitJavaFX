@@ -25,6 +25,7 @@ import java.util.List;
 public class Login {
     static public int rolePower;
     static public User user = new User(); // Controller 层的 登录的用户的实例
+    static public int T =2;
 
     @FXML
     private Button exitButton;
@@ -57,16 +58,24 @@ public class Login {
         Integer key = login.login(user);
         //无此账号，跳转注册界面
         if (key == -1) {
+            SiginNewUser.showOrderDetails("无此账号，请注册！");
             Stage stage = SceneSwitcher.getStageFromEvent(event);
             SceneSwitcher.switchScene(stage, "siginNewUser.fxml");
         }
         //密码错误
         else if (key == -2) {
-            Stage stage = SceneSwitcher.getStageFromEvent(event);
-            SceneSwitcher.switchScene(stage, "RetrievePassword.fxml");
+
+            if (T == 0) {
+                SiginNewUser.showOrderDetails("请找回密码！");
+                Stage stage = SceneSwitcher.getStageFromEvent(event);
+                SceneSwitcher.switchScene(stage, "RetrievePassword.fxml");
+            }
+            if (T >0)SiginNewUser.showOrderDetails("密码错误，请重试！\n 剩余尝试次数 "+T--+" 次");
+
         }
         //登录成功了
         else {
+            T =3;
             user.setUserId(key);
             // 从这一刻开始，user 有了灵魂（笑）
             Login.user = GetMapper.getUserMapper().selectUserByUserId(user);
