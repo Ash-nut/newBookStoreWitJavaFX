@@ -80,6 +80,7 @@ public class mePageController {
         // 处理注销登录按钮点击的逻辑
         Stage stage0 = SceneSwitcher.getStageFromEvent(event);
         SceneSwitcher.switchScene(stage0, "login.fxml");
+        Login.rolePower = 0;
         Login.user = null; //真正地执行了注销登录
     }
 

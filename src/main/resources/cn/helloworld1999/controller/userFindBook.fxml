@@ -4,7 +4,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="sel" fx:controller="cn.helloworld1999.controller.UserFindBookController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="sel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.helloworld1999.controller.UserFindBookController">
     <children>
         <TableView fx:id="bookTable" prefHeight="720.0" prefWidth="639.0"> <!-- 修改 fx:id 为 bookTable -->
             <columns>
@@ -15,7 +15,7 @@
             </columns>
         </TableView>
         <Button fx:id="findBook" layoutX="933.0" layoutY="277.0" mnemonicParsing="false" onAction="#findBook" prefHeight="23.0" prefWidth="151.0" text="查询" />
-        <TextField fx:id="inputBookId" layoutX="760.0" layoutY="169.0"  onAction="#inputBookId" prefHeight="23.0" prefWidth="324.0" text="书籍ID/book_id/bookId(动态SQL)" />
-        <TextField fx:id="InputBookName" layoutX="760.0" layoutY="212.0" onAction="#InputBookName" prefHeight="23.0" prefWidth="324.0" text="书籍名称/book_name/bookName(动态SQL，允许模糊查询)" />
+        <TextField fx:id="inputBookId" layoutX="760.0" layoutY="169.0" onAction="#inputBookId" prefHeight="23.0" prefWidth="324.0" promptText="书籍ID/book_id/bookId(动态SQL)" />
+        <TextField fx:id="InputBookName" layoutX="760.0" layoutY="212.0" onAction="#InputBookName" prefHeight="23.0" prefWidth="324.0" promptText="书籍名称/book_name/bookName(动态SQL，允许模糊查询)" />
     </children>
 </AnchorPane>

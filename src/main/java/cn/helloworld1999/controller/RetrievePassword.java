@@ -15,6 +15,7 @@ import static cn.helloworld1999.controller.SiginNewUser.showOrderDetails;
 
 public class RetrievePassword {
 
+    public TextField inputNewPassword;
     @FXML
     private AnchorPane SiginPane;
 
@@ -58,18 +59,22 @@ public class RetrievePassword {
         if (GetMapper.getUserMapper().selectUserByAccount(user) == null) {
             showOrderDetails("查无此人！");
         } else {
-            if (inputPhoneNum == null) {
-                showOrderDetails("未输入验证码！");
+            if (inputPhoneNum == null || "".equals(inputPhoneNum.getText())
+                    || (!GetMapper.getUserMapper().selectUserByAccount(user)
+                    .getUserPhoneNum().equals(inputPhoneNum.getText()))) {
+
+                showOrderDetails("未输入手机号,或输入手机号有误！");
             } else {
                 if (!inputVerificationCode.getText().equals(SiginNewUser.re)) {
                     showOrderDetails("验证码有误！");
                 } else {
+                    user = GetMapper.getUserMapper().selectUserByAccount(user);
                     user.setUserPhoneNum(inputPhoneNum.getText());
                     user.setAccount(inputNewAccount.getText());
-                    user.setPassword(inputVerificationCode.getText());
+                    user.setPassword(inputNewPassword.getText());
                     GetMapper.getUserMapper().updateUserSelective(user);
                     GetMapper.commit();
-                    showOrderDetails("修改！");
+                    showOrderDetails("修改成功！");
                     Stage stage1 = SceneSwitcher.getStageFromEvent(event);
                     SceneSwitcher.switchScene(stage1, "userPage.fxml");
                 }
@@ -80,9 +85,11 @@ public class RetrievePassword {
 
     @FXML
     void back(ActionEvent event) {
-        if (Login.user!=null){
+        if (Login.user.getUserId()!=null){
             Stage stage1 = SceneSwitcher.getStageFromEvent(event);
-            SceneSwitcher.switchScene(stage1, "userPage.fxml");
+            if (Login.rolePower ==1) SceneSwitcher.switchScene(stage1, "userPage.fxml");
+            if (Login.rolePower ==2) SceneSwitcher.switchScene(stage1, "merchant.fxml");
+            if (Login.rolePower ==3) SceneSwitcher.switchScene(stage1, "AdminPage.fxml");
         }else {
             Stage stage1 = SceneSwitcher.getStageFromEvent(event);
             SceneSwitcher.switchScene(stage1, "Login.fxml");
@@ -95,4 +102,6 @@ public class RetrievePassword {
         SiginNewUser.re = safe.ReCaptcha();
     }
 
+    public void inputNewPassword(ActionEvent actionEvent) {
+    }
 }

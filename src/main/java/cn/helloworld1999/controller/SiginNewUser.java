@@ -14,6 +14,7 @@ public class SiginNewUser {
     static public String re;
 
     public Button getRe;
+    public TextField inputNewPassword;
     @FXML
     private AnchorPane SiginPane;
 
@@ -121,5 +122,8 @@ public class SiginNewUser {
         SafeImpl safeImpl = new SafeImpl();
         re = safeImpl.ReCaptcha();
         System.out.println("re"+ re);
+    }
+
+    public void inputNewPassword(ActionEvent actionEvent) {
     }
 }

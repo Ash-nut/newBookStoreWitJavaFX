@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://www.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.helloworld</groupId>
     <artifactId>bean</artifactId>
@@ -25,7 +25,6 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.6</version>
         </dependency>
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -192,7 +191,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>cn.helloworld1999.controller.GUI</mainClass>
+                            <mainClass>cn.helloworld1999.controller.JavaFXBootstrap</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

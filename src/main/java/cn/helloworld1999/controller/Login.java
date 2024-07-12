@@ -23,7 +23,7 @@ import java.util.List;
 
 
 public class Login {
-
+    static public int rolePower;
     static public User user = new User(); // Controller 层的 登录的用户的实例
 
     @FXML
@@ -77,6 +77,7 @@ public class Login {
             switch (roleList.size()){
                 case 1:
                     System.out.println("登录客户页面");
+                    Login.rolePower = 1; //算是一个魔法值吧，它其实是用来保证权限的，防止出现利用重置密码的返回页面进行提权
                     Stage stage0 = SceneSwitcher.getStageFromEvent(event);
                     SceneSwitcher.switchScene(stage0, "userPage.fxml");
                     break;

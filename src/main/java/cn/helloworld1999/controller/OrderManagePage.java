@@ -78,6 +78,7 @@ public class OrderManagePage {
     void reLogin(ActionEvent event) {
         // 处理注销登录按钮点击的逻辑
         Stage stage0 = SceneSwitcher.getStageFromEvent(event);
+        Login.rolePower = 0;
         SceneSwitcher.switchScene(stage0, "login.fxml");
     }
 
