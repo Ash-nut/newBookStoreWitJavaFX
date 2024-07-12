@@ -24,6 +24,9 @@
         </set>
         WHERE user_id = #{userId}
     </update>
+    <delete id="deleteUserByUserId">
+        DELETE FROM book_store.user WHERE user_id = #{userId}
+    </delete>
 
     <select id="showAllUsers" resultType="cn.helloworld1999.bean.User">
         SELECT * FROM book_store.user
@@ -33,23 +36,23 @@
         FROM book_store.user
         WHERE account = #{account}
     </select>
-    <select id="selectUserSelective">
+
+    <select id="selectUserSelective" resultType="cn.helloworld1999.bean.User">
         SELECT * FROM book_store.user
         <where>
-            <if test="user_id != null">
+            <if test="userId != null">
                 AND user_id = #{userId}
             </if>
             <if test="account != null and account != ''">
-                AND account = #{account}
+                AND account LIKE CONCAT('%', #{account}, '%')
             </if>
-            <if test="balance != null">
-                AND balance = #{balance}
-            </if>
-            <if test="user_phone_num != null and user_phone_num != ''">
-                AND user_phone_num = #{user_phone_num}
+            <if test="userPhoneNum != null and userPhoneNum != ''">
+                AND user_phone_num = #{userPhoneNum}
             </if>
         </where>
     </select>
+
+
     <select id="selectUserByUserId" resultType="cn.helloworld1999.bean.User">
         SELECT * FROM book_store.user WHERE user_id = #{userId}
     </select>

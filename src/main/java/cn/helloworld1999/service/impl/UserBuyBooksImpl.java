@@ -55,27 +55,24 @@ public class UserBuyBooksImpl implements UserBuyBooks {
         }
     }
 
+    /**
+     * 这是一个耦合程度很高的函数，虽然功能完善，逻辑严密（笑），但是让人看都不想看
+     * @param user 待创建订单的某人
+     */
     @Override
     public void createOrder(User user) {
         // 准备生成订单
         Order order = new Order();
         //绑定给某人
         order.setUserId(user.getUserId());
-        //Assert.assertEquals(user.getUserId(), order.getUserId());
-//-------------------------------------------------------------------------------------------------/
         //拿到自增主键，orderId
         GetMapper.getOrderMapper().createOrder(order);
         Integer orderId = getOrderMapper().getMaxOrderId();
         GetMapper.commit();
-        //Integer x = 51;
-        //Assert.assertEquals(x,orderId);
-//-------------------------------------------------------------------------------------------------/
         order.setOrderId(orderId);
         Double orderPriceSum = 0.0;
         //拿到子订单表
         List<OrderSubpage> userAllOrderSubpage = getOrderSubpageMapper().selectAllByUser(user);
-        //Assert.assertNotNull(userAllOrderSubpage);
-//-------------------------------------------------------------------------------------------------/
         //给需要生成订单的子订单赋予 orderID
         for (OrderSubpage orderSubpage : userAllOrderSubpage) {
             //筛选目标
@@ -83,13 +80,7 @@ public class UserBuyBooksImpl implements UserBuyBooks {
                 //确认库存
                 Book bk = new Book();
                 bk.setBookId(orderSubpage.getBookId()); //装 bookId 的工具人，魔法值
-                //Assert.assertNotNull(bk);
-//-------------------------------------------------------------------------------------------------/
                 List<Book> lb = GetMapper.getBookMapper().selectBookSelective(bk);
-                //Assert.assertNotNull(lb);
-                //Assert.assertEquals(1, lb.size());
-                //Assert.assertEquals("计算机视觉",lb.get(0).getBookName());
-//-------------------------------------------------------------------------------------------------/
                 //大于零说明商品里 还有这本书
                 if (lb.size() > 0) {
                     // 与库存数量进行比对,如果库存小于订单量
@@ -115,8 +106,6 @@ public class UserBuyBooksImpl implements UserBuyBooks {
                         getBookMapper().updateBook(lb.get(0)); //减少库存
                         orderPriceSum += orderSubpage.getPriceSum();
                         orderSubpage.setOrderId(orderId);
-                        //Integer x = 71;
-                        //Assert.assertEquals(x,orderSubpage.getNum());
                         orderSubpage.setState(OrderSubpage.STATE[3]);
                         getOrderSubpageMapper().updateByOrderSubpageId(orderSubpage);
                         GetMapper.commit();

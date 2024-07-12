@@ -3,6 +3,9 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.helloworld1999.mapper.RoleMapper">
+    <insert id="insertRole">
+        INSERT INTO book_store.role(user_id, role_name) VALUES (#{userId},#{roleName})
+    </insert>
     <delete id="deleteRole">
         DELETE FROM book_store.role WHERE id = #{id}
     </delete>

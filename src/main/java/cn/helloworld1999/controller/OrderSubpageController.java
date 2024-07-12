@@ -5,8 +5,11 @@ import cn.helloworld1999.bean.OrderSubpage;
 import cn.helloworld1999.bean.User;
 import cn.helloworld1999.service.impl.UserBuyBooksImpl;
 import cn.helloworld1999.util.GetMapper;
+import cn.helloworld1999.util.SceneSwitcher;
+import com.almasb.fxgl.entity.action.Action;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -143,7 +146,7 @@ public class OrderSubpageController {
 
     // 结算订单按钮的点击事件处理方法
     @FXML
-    private void settleOrder() {
+    private void settleOrder(ActionEvent event) {
         UserBuyBooksImpl userBuyBooksImpl = new UserBuyBooksImpl();
         userBuyBooksImpl.createOrder(Login.user);
         GetMapper.commit();
@@ -155,5 +158,7 @@ public class OrderSubpageController {
             }
         }
         refreshTable();
+        Stage stage0 = SceneSwitcher.getStageFromEvent(event);
+        SceneSwitcher.switchScene(stage0, "userPage.fxml");
     }
 }

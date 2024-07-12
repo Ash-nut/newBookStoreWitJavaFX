@@ -36,7 +36,7 @@ public class LoginImpl implements Login {
     public Integer register(User loginUser) {
         if ((login(loginUser) != null) && (login(loginUser) != -1)) {
             SafeImpl safe = new SafeImpl();
-            safe.ReCaptcha(new User()); // 这是一个没写完的方法，先来占一下位置，被卡在腾讯云的短信签名了
+            safe.ReCaptcha(); // 这是一个没写完的方法，先来占一下位置，被卡在腾讯云的短信签名了
             //TODO 写到这里是一半了，这里要做验证码的获取和校验以及计时
             //------ 施 工 中 ------
             //假设通过了

@@ -125,19 +125,12 @@ public class mePageController {
             public TableCell<Order, Void> call(final TableColumn<Order, Void> param) {
                 final TableCell<Order, Void> cell = new TableCell<>() {
 
-                    private final Button actionBtn = new Button("重新支付");
+                    private final Button actionBtn = new Button("预留功能");
                     private final Button cartBtn = new Button("查看订单");
 
                     {
-                        // 设置按钮点击事件 重新支付
+                        // 无事发生，因为没设置
                         actionBtn.setOnAction(event -> {
-                            Order order = getTableView().getItems().get(getIndex());
-                            UserBuyBooksImpl userBuyBooksImpl = new UserBuyBooksImpl();
-                            if (!order.getState().equals("已完成")) {
-                                userBuyBooksImpl.pay(Login.user, order);
-                                Stage stage0 = SceneSwitcher.getStageFromEvent(event);
-                                SceneSwitcher.switchScene(stage0, "userPage.fxml");
-                            }
                         });
 
                         cartBtn.setOnAction(event -> {

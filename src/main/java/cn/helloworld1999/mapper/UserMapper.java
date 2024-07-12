@@ -30,10 +30,13 @@ public interface UserMapper {
     int updateUserSelective(User user);
 
     /**
-     * 模糊查询
+     * 动态SQL 支持使用账号名模糊查询
      * @param user 可用 userId、account、balance、user_phone_num
      * @return 返回符合条件的 User 列表
      */
     List<User> selectUserSelective(User user);
+
     User selectUserByUserId(User user);
+
+    int deleteUserByUserId(User user);
 }

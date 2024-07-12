@@ -5,36 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="加载JavaFX前，进行保存">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderManagePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderSubpageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/UserFindBookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/mePageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/Sample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/OrderManagePage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/ShopCarView.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/bookManagePage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/merchant.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ManageUserTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/AdminControllerPage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/AdminPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/bean/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/BookTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ManageBookTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderSubpageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderSubpageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/RetrievePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/RetrievePassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ThreeRoleLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ThreeRoleLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/TwoRoleLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/TwoRoleLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/BookMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/OrderMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/OrderSubpageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/OrderSubpageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/SendSms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/UserFindBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/UserFindBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/mePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/mePageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/密钥" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/密钥" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/Sample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/bookTable.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/BookTableView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/threeRoleLogin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/threeRoleLogin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/BookMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderSubpageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/OrderSubpageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/service/impl/UserBuyBooksImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/helloworld1999/service/impl/UserBuyBooksImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/siginNewUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/siginNewUser.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +39,7 @@
         <option value="Interface" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -89,50 +82,52 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "JUnit.OrderMapperTest.getMaxOrderId.executor": "Run",
-    "JUnit.OrderMapperTest.getSomeOrders.executor": "Run",
-    "JUnit.RoleMapperTest.selectRoleSelective.executor": "Run",
-    "JUnit.RoleMapperTest.testSelectAllUserRole.executor": "Run",
-    "JUnit.UserBuyBooksImplTest.createOrder.executor": "Run",
-    "JUnit.UserMapperTest.executor": "Run",
-    "JUnit.UserMapperTest.testInsertList.executor": "Run",
-    "JUnit.UserMapperTest.testSelectAll.executor": "Run",
-    "JUnit.UserMapperTest.testSelectByAccountAndInsertUser.executor": "Run",
-    "JUnit.UserMapperTest.testSelectById.executor": "Run",
-    "JUnit.UserMapperTest.testUpdateUserSelective.executor": "Run",
-    "Maven.bean [clean].executor": "Run",
-    "Maven.bean [install].executor": "Run",
-    "Maven.bean [org.openjfx:javafx-maven-plugin:0.0.8:run].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/DevelopData/newBookStoreWitJavaFX/src/main/resources/cn/helloworld1999/controller",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "vue.rearranger.settings.migration": "true",
-    "应用程序.GUI.executor": "Run",
-    "应用程序.ProductListApp.executor": "Run",
-    "应用程序.Sample.executor": "Run",
-    "应用程序.SendSms.executor": "Run",
-    "应用程序.UserBuyBooksImpl.executor": "Run",
-    "应用程序.cn.helloworld1999.controller.GUI.executor": "Run",
-    "应用程序.cn.helloworld1999.view.GUI.executor": "Run",
-    "应用程序.test.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.OrderMapperTest.getMaxOrderId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderMapperTest.getSomeOrders.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoleMapperTest.selectRoleSelective.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoleMapperTest.testSelectAllUserRole.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserBuyBooksImplTest.createOrder.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testInsertList.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testSelectAll.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testSelectByAccountAndInsertUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testSelectById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserMapperTest.testUpdateUserSelective.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bean [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bean [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bean [org.apache.maven.plugins:maven-clean-plugin:2.5:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bean [org.apache.maven.plugins:maven-install-plugin:2.4:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bean [org.openjfx:javafx-maven-plugin:0.0.8:run].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DevelopData/newBookStoreWitJavaFX/src/main/resources/cn/helloworld1999/controller&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;应用程序.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.ProductListApp.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.Sample.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.SendSms.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.UserBuyBooksImpl.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.cn.helloworld1999.controller.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.cn.helloworld1999.view.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;应用程序.test.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DevelopData\newBookStoreWitJavaFX\src\main\resources\cn\helloworld1999\controller" />
@@ -270,7 +265,10 @@
       <workItem from="1720629978989" duration="1255000" />
       <workItem from="1720660700395" duration="29920000" />
       <workItem from="1720694709862" duration="12296000" />
-      <workItem from="1720752508795" duration="5722000" />
+      <workItem from="1720752508795" duration="6753000" />
+      <workItem from="1720764971092" duration="13754000" />
+      <workItem from="1720783217795" duration="2565000" />
+      <workItem from="1720786022849" duration="2559000" />
     </task>
     <task id="LOCAL-00001" summary="加载JavaFX前，进行保存">
       <option name="closed" value="true" />

@@ -8,8 +8,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 
-
-<AnchorPane fx:id="SiginPane" fx:controller="cn.helloworld1999.controller.SiginNewUser" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="SiginPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.helloworld1999.controller.SiginNewUser">
    <children>
       <TextField fx:id="inputNewAccount" layoutX="506.0" layoutY="123.0" onAction="#getNewAccount" promptText="请输入新用户名">
          <font>
@@ -42,6 +41,11 @@
          </font>
       </Button>
       <Button fx:id="backButton" layoutX="506.0" layoutY="445.0" mnemonicParsing="false" onAction="#back" prefHeight="41.0" prefWidth="130.0" text="取消并返回">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="getRe" layoutX="787.0" layoutY="375.0" mnemonicParsing="false" onAction="#getRe" prefHeight="41.0" prefWidth="141.0" text="获取验证码">
          <font>
             <Font size="20.0" />
          </font>

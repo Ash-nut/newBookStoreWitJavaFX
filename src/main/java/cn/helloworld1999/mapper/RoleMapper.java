@@ -26,4 +26,6 @@ public interface RoleMapper {
      * @return 影响行数
      */
     int deleteRole(List<Role> roles);
+
+    int insertRole(Role role);
 }

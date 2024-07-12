@@ -33,6 +33,8 @@ public class ThreeRoleLogin {
     @FXML
     void loginUseAdminRole(ActionEvent event) {
         System.out.println("进入管理员界面");
+        Stage stage = SceneSwitcher.getStageFromEvent(event);
+        SceneSwitcher.switchScene(stage, "AdminPage.fxml");
     }
 
 }

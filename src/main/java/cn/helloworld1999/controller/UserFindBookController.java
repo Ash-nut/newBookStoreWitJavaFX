@@ -63,7 +63,6 @@ public class UserFindBookController {
     // 从数据库获取书籍数据并刷新显示
     private void getBookData() {
         Book book = new Book();
-        //book.setBookId(Integer.parseInt(inputBookId.getText()));
         book.setBookName(InputBookName.getText());
 
         List<Book> bookData = GetMapper.getBookMapper().selectBookSelectiveByBookName(book);

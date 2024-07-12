@@ -1,5 +1,4 @@
 open module cn.helloworld1999.bookstore {
-    requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
 
