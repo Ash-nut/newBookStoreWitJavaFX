@@ -27,4 +27,7 @@
     <select id="getMaxOrderId" resultType="java.lang.Integer">
         SELECT MAX(order_id) FROM book_store.order;
     </select>
+    <select id="getAllOrders" resultType="cn.helloworld1999.bean.Order">
+        SELECT * FROM book_store.`order`
+    </select>
 </mapper>

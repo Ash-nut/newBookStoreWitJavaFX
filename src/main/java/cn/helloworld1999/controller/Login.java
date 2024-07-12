@@ -78,17 +78,17 @@ public class Login {
                 case 1:
                     System.out.println("登录客户页面");
                     Stage stage0 = SceneSwitcher.getStageFromEvent(event);
-                    SceneSwitcher.switchScene(stage0, "bookTable.fxml");
+                    SceneSwitcher.switchScene(stage0, "userPage.fxml");
                     break;
                 case 2:
                     System.out.println("登录2角色选择页面");
-                    Stage stage = SceneSwitcher.getStageFromEvent(event);
-                    SceneSwitcher.switchScene(stage, "twoRoleLogin.fxml");
+                    Stage stage1 = SceneSwitcher.getStageFromEvent(event);
+                    SceneSwitcher.switchScene(stage1, "twoRolePage.fxml");
                     break;
                 case 3:
                     System.out.println("登录3角色选择页面");
-                    Stage stage1 = SceneSwitcher.getStageFromEvent(event);
-                    SceneSwitcher.switchScene(stage1, "threeRoleLogin.fxml");
+                    Stage stage2 = SceneSwitcher.getStageFromEvent(event);
+                    SceneSwitcher.switchScene(stage2, "threeRoleLogin.fxml");
                     break;
                 default:
                     System.out.println("糟糕！程序以意想不到的问题运行了，绝对不是程序员的锅");

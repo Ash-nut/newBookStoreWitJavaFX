@@ -1,8 +1,10 @@
 package cn.helloworld1999.controller;
 
+import cn.helloworld1999.util.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class ThreeRoleLogin {
 
@@ -17,12 +19,15 @@ public class ThreeRoleLogin {
 
     @FXML
     void loginUseClientRole(ActionEvent event) {
-        System.out.println("进入客户界面");
+        Stage stage = SceneSwitcher.getStageFromEvent(event);
+        SceneSwitcher.switchScene(stage, "userPage.fxml");
     }
 
     @FXML
     void loginUseMerchantRole(ActionEvent event) {
         System.out.println("进入商家界面");
+        Stage stage = SceneSwitcher.getStageFromEvent(event);
+        SceneSwitcher.switchScene(stage, "merchant.fxml");
     }
 
     @FXML

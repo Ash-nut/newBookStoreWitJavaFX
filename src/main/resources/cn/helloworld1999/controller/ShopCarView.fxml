@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="cn.helloworld1999.controller.OrderSubpageController">
+    <children>
+        <TableView fx:id="orderSubpageTable" prefWidth="1280" prefHeight="680" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="50.0">
+            <columns>
+                <TableColumn fx:id="bookName" text="书籍名称" />
+                <TableColumn fx:id="userId" text="用户ID" />
+                <TableColumn fx:id="num" text="数量" />
+                <TableColumn fx:id="priceOne" text="单价" />
+                <TableColumn fx:id="priceSum" text="总价" />
+                <TableColumn fx:id="info" text="信息" />
+                <TableColumn fx:id="bookId" text="书籍ID" />
+            </columns>
+        </TableView>
+        <Button text="结算订单" layoutX="10.0" layoutY="690.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" onAction="#settleOrder" />
+    </children>
+</AnchorPane>

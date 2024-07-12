@@ -28,6 +28,8 @@ public interface OrderSubpageMapper {
      */
     List<OrderSubpage> selectAllByUser(User user);
 
+    List<OrderSubpage> selectShopCarByUser(User user);
+
 
     /**
      * 拿到某个子订单的数据
@@ -42,5 +44,11 @@ public interface OrderSubpageMapper {
      * @return 影响行数
      */
     int updateByOrderSubpageId(OrderSubpage orderSubpage);
+
+    /**
+     * 拿到某个订单的全部子订单
+     * @param order 某订单
+     * @return 它的全部子订单
+     */
     List<OrderSubpage> getAllOrderSubpageByOrder(Order order);
 }

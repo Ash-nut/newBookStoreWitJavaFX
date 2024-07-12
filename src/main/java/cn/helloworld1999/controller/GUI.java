@@ -19,6 +19,7 @@ public class GUI extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         Pane root = FXMLLoader.load(getClass().getResource("login.fxml"));
+        //Pane root = FXMLLoader.load(getClass().getResource("userPage.fxml"));
         Scene scene = new Scene(root,1280,720);
         primaryStage.setTitle("测试 BooK Store");
         primaryStage.setScene(scene);

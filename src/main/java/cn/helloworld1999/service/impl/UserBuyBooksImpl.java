@@ -50,7 +50,6 @@ public class UserBuyBooksImpl implements UserBuyBooks {
         List<OrderSubpage> shopCar = null;
         for (OrderSubpage orderSubpage : userAllOrderSubpage) {
             if (orderSubpage.getState().equals("加入购物车")) {
-                System.out.println("拿到了111111111111111111111");
                 shopCar.add(orderSubpage);
             }
         }
@@ -164,7 +163,7 @@ public class UserBuyBooksImpl implements UserBuyBooks {
             Role r = new Role(null, Role.ROLE_LIST[1]);
             List<Role> rl = GetMapper.getRoleMapper().selectSomeRole(r);
             User user1 = new User();
-            user1.setUserId(rl.get(0).getUserId()); //为什么这么笃定这人买的书，很简单，因为我这个系统就一个商家，新华文轩APP hahaha
+            user1.setUserId(rl.get(0).getUserId()); //为什么这么笃定这人卖的书，很简单，因为我这个系统就一个商家，新华文轩APP hahaha
             user1.setBalance(user1.getBalance() + order.getOrderSumPrice());
             getUserMapper().updateUserSelective(user1);
             GetMapper.commit();
@@ -183,6 +182,7 @@ public class UserBuyBooksImpl implements UserBuyBooks {
      */
     @Override
     public void topUp(User user, Double cheangeMoney) {
+        cheangeMoney = Math.abs(cheangeMoney);
         user.setBalance(user.getBalance() + cheangeMoney);
         GetMapper.getUserMapper().updateUserSelective(user);
         GetMapper.commit();

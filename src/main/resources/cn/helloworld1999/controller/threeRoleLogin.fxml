@@ -7,7 +7,7 @@
 
 <AnchorPane fx:id="threeRoleLogin" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.helloworld1999.controller.ThreeRoleLogin">
    <children>
-      <Button fx:id="client" layoutX="422.0" layoutY="302.0" mnemonicParsing="false" onAction="#loginUseClientRole" prefHeight="58.0" prefWidth="436.0" text="1.客户">
+      <Button fx:id="client" layoutX="422.0" layoutY="300.0" mnemonicParsing="false" onAction="#loginUseClientRole" prefHeight="58.0" prefWidth="436.0" text="1.客户">
          <font>
             <Font size="30.0" />
          </font>
@@ -17,7 +17,12 @@
             <Font size="37.0" />
          </font>
       </Label>
-      <Button fx:id="merchant" layoutX="422.0" layoutY="391.0" mnemonicParsing="false" onAction="#loginUseMerchantRole" prefHeight="58.0" prefWidth="436.0" text="2.商家">
+      <Button fx:id="merchant" layoutX="422.0" layoutY="390.0" mnemonicParsing="false" onAction="#loginUseMerchantRole" prefHeight="58.0" prefWidth="436.0" text="2.商家">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="admint" layoutX="422.0" layoutY="480.0" mnemonicParsing="false" onAction="#loginUseAdminRole" prefHeight="58.0" prefWidth="436.0" text="3.管理员">
          <font>
             <Font size="30.0" />
          </font>

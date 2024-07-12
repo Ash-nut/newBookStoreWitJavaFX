@@ -18,5 +18,12 @@ open module cn.helloworld1999.bookstore {
     requires alibabacloud.dysmsapi20170525;
     requires darabonba.java.core;
     requires com.fasterxml.jackson.databind;
-
+    requires httpcore;
+    requires httpclient;
+    requires java.sql;
+    requires tea.openapi;
+    requires tea;
+    requires tea.util;
+    requires openapiutil;
+    requires dysmsapi20170525;
 }

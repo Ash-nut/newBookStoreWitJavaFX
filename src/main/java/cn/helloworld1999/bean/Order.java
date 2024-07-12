@@ -1,5 +1,6 @@
 package cn.helloworld1999.bean;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Order {
@@ -10,7 +11,7 @@ public class Order {
     private Double orderSumPrice;   //总价
     private String remark;  //备注
     private String state;   //状态
-    public static final String[] STATE = {"待付款","取消","已完成"};
+    public static final String[] STATE = {"待付款","支付失败","已完成"};
 
     public Integer getOrderId() {
         return orderId;
@@ -58,5 +59,9 @@ public class Order {
 
     public void setState(String state) {
         this.state = state;
+    }
+    public String getOrderDateFormatted() {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        return formatter.format(orderDate);
     }
 }

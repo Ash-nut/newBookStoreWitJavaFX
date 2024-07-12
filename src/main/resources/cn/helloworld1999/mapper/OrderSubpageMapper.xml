@@ -34,4 +34,7 @@
     <select id="getAllOrderSubpageByOrder" resultType="cn.helloworld1999.bean.OrderSubpage">
         SELECT * FROM book_store.order_subpage WHERE order_id = #{orderId}
     </select>
+    <select id="selectShopCarByUser" resultType="cn.helloworld1999.bean.OrderSubpage">
+        SELECT * FROM book_store.order_subpage WHERE user_id = #{userId} AND state = '加入购物车'
+    </select>
 </mapper>

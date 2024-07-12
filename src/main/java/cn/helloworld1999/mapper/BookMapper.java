@@ -12,12 +12,18 @@ public interface BookMapper {
     List<Book> selectAllBook();
 
     /**
-     * 模糊查询
+     * 动态SQL
      * @param book 一个用 bookId、bookName、price、stock 任意组合构造的 Book
      * @return Book 列表
      */
     List<Book> selectBookSelective(Book book);
 
+    /**
+     * 允许 书名 模糊的 动态SQL查询
+     * @param book
+     * @return
+     */
+    List<Book> selectBookSelectiveByBookName(Book book);
     /**
      * 添加一本书
      * @param book 使用标准 Book构造出来的

@@ -18,4 +18,5 @@ public interface OrderMapper {
      */
     Integer creatAndReturnOrderId(Order order);
     Integer getMaxOrderId();
+    List<Order> getAllOrders();
 }
