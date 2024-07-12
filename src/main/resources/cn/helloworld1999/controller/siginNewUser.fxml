@@ -25,12 +25,12 @@
             <Font size="20.0" />
          </font>
       </PasswordField>
-      <TextField fx:id="inputPhoneNum" layoutX="506.0" layoutY="309.0" onAction="#getPhoneNum" text="请输入手机号">
+      <TextField fx:id="inputPhoneNum" layoutX="506.0" layoutY="309.0" onAction="#getPhoneNum" promptText="请输入手机号">
          <font>
             <Font size="20.0" />
          </font>
       </TextField>
-      <TextField fx:id="inputVerificationCode" layoutX="506.0" layoutY="375.0" onAction="#getVerificationCode" text="请输入验证码">
+      <TextField fx:id="inputVerificationCode" layoutX="506.0" layoutY="375.0" onAction="#getVerificationCode" promptText="请输入验证码">
          <font>
             <Font size="20.0" />
          </font>

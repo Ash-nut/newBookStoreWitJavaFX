@@ -15,6 +15,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.util.Callback;
+import org.apache.ibatis.logging.Log;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,6 +80,7 @@ public class mePageController {
         // 处理注销登录按钮点击的逻辑
         Stage stage0 = SceneSwitcher.getStageFromEvent(event);
         SceneSwitcher.switchScene(stage0, "login.fxml");
+        Login.user = null; //真正地执行了注销登录
     }
 
     @FXML

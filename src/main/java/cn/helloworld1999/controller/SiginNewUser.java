@@ -1,7 +1,5 @@
 package cn.helloworld1999.controller;
 
-import cn.helloworld1999.bean.Order;
-import cn.helloworld1999.bean.OrderSubpage;
 import cn.helloworld1999.bean.User;
 import cn.helloworld1999.service.impl.SafeImpl;
 import cn.helloworld1999.util.GetMapper;
@@ -11,9 +9,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class SiginNewUser {
     static public String re;
@@ -78,19 +73,28 @@ public class SiginNewUser {
         user.setAccount(inputNewAccount.getText());
         if (GetMapper.getUserMapper().selectUserByAccount(user)!=null){
             showOrderDetails("用户已存在！");
-        }else if (!inputPassword.equals(inputPasswordAgain)){
+        } else {
+            if (inputPassword.equals(inputPasswordAgain)) {
             showOrderDetails("两次输入的密码不一致！");
-        }else if (inputPhoneNum == null){
-            showOrderDetails("未输入验证码！");
-        }else if (inputVerificationCode.equals(re)){
-            showOrderDetails("验证码有误！");
-        }else {
-            user.setUserPhoneNum(inputPhoneNum.getText());
-            user.setAccount(inputNewAccount.getText());
-            user.setPassword(inputPassword.getText());
-            GetMapper.getUserMapper().insertUser(user);
-            Stage stage1 = SceneSwitcher.getStageFromEvent(event);
-            SceneSwitcher.switchScene(stage1, "userPage.fxml");
+            } else {
+                if (inputPhoneNum == null) {
+                    showOrderDetails("未输入验证码！");
+                } else {
+                    if (!inputVerificationCode.getText().equals(re)) {
+                        showOrderDetails("验证码有误！");
+                    } else {
+                        user.setUserPhoneNum(inputPhoneNum.getText());
+                        user.setAccount(inputNewAccount.getText());
+                        user.setPassword(inputPassword.getText());
+                        GetMapper.getUserMapper().insertUser(user);
+                        GetMapper.commit();
+                        showOrderDetails("注册成功！");
+                        Stage stage1 = SceneSwitcher.getStageFromEvent(event);
+                        SceneSwitcher.switchScene(stage1, "userPage.fxml");
+                    }
+                }
+
+            }
         }
     }
 
@@ -99,7 +103,7 @@ public class SiginNewUser {
         Stage stage0 = SceneSwitcher.getStageFromEvent(event);
         SceneSwitcher.switchScene(stage0, "login.fxml");
     }
-    public void showOrderDetails(String str) {
+    public static void showOrderDetails(String str) {
         // 创建一个信息类型的 Alert 对象
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("警告！"); // 设置弹窗标题
@@ -116,5 +120,6 @@ public class SiginNewUser {
     public void getRe(ActionEvent actionEvent) {
         SafeImpl safeImpl = new SafeImpl();
         re = safeImpl.ReCaptcha();
+        System.out.println("re"+ re);
     }
 }

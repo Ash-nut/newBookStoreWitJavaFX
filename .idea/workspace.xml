@@ -5,28 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="加载JavaFX前，进行保存">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ManageUserTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/AdminControllerPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/AdminPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderSubpageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/OrderSubpageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/RetrievePassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/RetrievePassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ThreeRoleLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/ThreeRoleLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/TwoRoleLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/TwoRoleLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/UserFindBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/UserFindBookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/mePageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/mePageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/Safe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/SafeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/util/Sample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/retrievePassword.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/retrievePassword.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/siginNewUser.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/controller/siginNewUser.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cn/helloworld1999/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +144,7 @@
       <recent name="cn.helloworld1999.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.GUI">
+  <component name="RunManager" selected="应用程序.Sample">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.helloworld1999.controller.GUI" />
       <module name="newBookStoreWitJavaFX" />
@@ -233,8 +218,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.GUI" />
         <item itemvalue="应用程序.Sample" />
+        <item itemvalue="应用程序.GUI" />
         <item itemvalue="JUnit.OrderMapperTest.getMaxOrderId" />
         <item itemvalue="应用程序.SendSms" />
         <item itemvalue="JUnit.UserBuyBooksImplTest.createOrder" />
@@ -268,7 +253,7 @@
       <workItem from="1720752508795" duration="6753000" />
       <workItem from="1720764971092" duration="13754000" />
       <workItem from="1720783217795" duration="2565000" />
-      <workItem from="1720786022849" duration="2559000" />
+      <workItem from="1720786022849" duration="4651000" />
     </task>
     <task id="LOCAL-00001" summary="加载JavaFX前，进行保存">
       <option name="closed" value="true" />
