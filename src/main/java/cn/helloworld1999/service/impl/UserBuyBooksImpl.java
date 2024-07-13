@@ -154,7 +154,7 @@ public class UserBuyBooksImpl implements UserBuyBooks {
             Role r = new Role(null, Role.ROLE_LIST[1]);
             List<Role> rl = GetMapper.getRoleMapper().selectSomeRole(r);
             User user1 = new User();
-            user1.setUserId(rl.get(0).getUserId()); //为什么这么笃定这人卖的书，很简单，因为我这个系统就一个商家，新华文轩APP hahaha
+            user1.setUserId(rl.get(0).getUserId()); //为什么这么笃定这人卖的书，很简单，因为我这个系统就一个商家（不算管理员的情况下），新华文轩APP hahaha
             user1.setBalance(user1.getBalance() + order.getOrderSumPrice());
             getUserMapper().updateUserSelective(user1);
             GetMapper.commit();

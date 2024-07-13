@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6c042c-897b-4ee6-96e8-3e9bd242eb29" name="更改" comment="加载JavaFX前，进行保存">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/controller/SiginNewUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/helloworld1999/service/impl/UserBuyBooksImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -251,7 +252,8 @@
       <workItem from="1720786022849" duration="7302000" />
       <workItem from="1720793462751" duration="833000" />
       <workItem from="1720833203622" duration="220000" />
-      <workItem from="1720836252729" duration="1759000" />
+      <workItem from="1720836252729" duration="5489000" />
+      <workItem from="1720848192744" duration="143000" />
     </task>
     <task id="LOCAL-00001" summary="加载JavaFX前，进行保存">
       <option name="closed" value="true" />

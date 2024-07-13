@@ -91,6 +91,7 @@ public class SiginNewUser {
                         GetMapper.commit();
                         showOrderDetails("注册成功！");
                         Stage stage1 = SceneSwitcher.getStageFromEvent(event);
+                        Login.user = user;
                         SceneSwitcher.switchScene(stage1, "userPage.fxml");
                     }
                 }
