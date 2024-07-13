@@ -101,6 +101,7 @@ public class Login {
                     SceneSwitcher.switchScene(stage2, "threeRoleLogin.fxml");
                     break;
                 default:
+                    SiginNewUser.showOrderDetails("该用户无角色！");
                     System.out.println("糟糕！程序以意想不到的问题运行了，绝对不是程序员的锅");
                     break;
             }
