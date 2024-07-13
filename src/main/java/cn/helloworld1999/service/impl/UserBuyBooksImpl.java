@@ -1,6 +1,7 @@
 package cn.helloworld1999.service.impl;
 
 import cn.helloworld1999.bean.*;
+import cn.helloworld1999.controller.SiginNewUser;
 import cn.helloworld1999.service.UserBuyBooks;
 import cn.helloworld1999.util.GetMapper;
 
@@ -146,6 +147,7 @@ public class UserBuyBooksImpl implements UserBuyBooks {
             GetMapper.getUserMapper().updateUserSelective(user);
             GetMapper.commit();
             order.setState(Order.STATE[2]);
+
             GetMapper.getOrderMapper().updateOrder(order);
             commit();
             // 商家加钱
@@ -156,11 +158,14 @@ public class UserBuyBooksImpl implements UserBuyBooks {
             user1.setBalance(user1.getBalance() + order.getOrderSumPrice());
             getUserMapper().updateUserSelective(user1);
             GetMapper.commit();
+            SiginNewUser.showOrderDetails("订单已完成！");
         } else {
             order.setState(Order.STATE[1]);
             order.setRemark("余额不足，付款失败");
+
             getOrderMapper().updateOrder(order);
-            commit();
+            GetMapper.commit();
+            SiginNewUser.showOrderDetails("余额不足，付款失败");
         }
     }
 
